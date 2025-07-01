@@ -1,106 +1,112 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Google Inc//Google Calendar 70.9054//EN
+PRODID:-//Last War Strategy//EN
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Asia/Singapore
 BEGIN:STANDARD
-TZOFFSETFROM:+0000
-TZOFFSETTO:+0000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
 TZNAME:SGT
-DTSTART;TZID=Asia/Singapore:19700101T000000
+DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
+
 BEGIN:VEVENT
-UID:6a2910d3-c24d-485a-b0e7-5358c6f2e41f@example.com
+UID:radar@example.com
 DTSTAMP;TZID=Asia/Singapore:20250702T055420
 DTSTART;TZID=Asia/Singapore:20250701T080500
 DTEND;TZID=Asia/Singapore:20250702T075500
 SUMMARY:📡 Radar Training
-DESCRIPTION:Day 1: Stack radar missions. Use stamina and gather resources.
-LOCATION:Last War Server Time (UTC+0)
+DESCRIPTION:🧭 Tip: Stack radar missions before reset, then complete them right after.\n💎 Refresh radar with gems to maximize rewards.\n🎯 Target high-XP and hero-item radar missions for best return.
+LOCATION:Last War Server Time
 CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY;INTERVAL=1
+RRULE:FREQ=WEEKLY
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:f60abd99-66b4-4531-80ce-22ca89492fc6@example.com
+UID:build@example.com
 DTSTAMP;TZID=Asia/Singapore:20250702T055420
 DTSTART;TZID=Asia/Singapore:20250702T080500
 DTEND;TZID=Asia/Singapore:20250703T075500
 SUMMARY:🏗️ Base Expansion
-DESCRIPTION:Day 2: Use build speed-ups and dispatch trade trucks.
-LOCATION:Last War Server Time (UTC+0)
+DESCRIPTION:🏘️ Tip: Upgrade low-cost, short-timer buildings.\n📅 Queue builds before reset and finish them afterward.\n🚚 Use Trade Truck and Stamina missions to align with parallel events.
+LOCATION:Last War Server Time
 CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY;INTERVAL=1
+RRULE:FREQ=WEEKLY
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:6bcfa1fb-d4ae-4d8c-8a03-629249a54dc2@example.com
+UID:science@example.com
 DTSTAMP;TZID=Asia/Singapore:20250702T055420
 DTSTART;TZID=Asia/Singapore:20250703T080500
 DTEND;TZID=Asia/Singapore:20250704T075500
 SUMMARY:🧪 Age of Science
-DESCRIPTION:Day 3: Use science speed-ups. Finish Tech Center research.
-LOCATION:Last War Server Time (UTC+0)
+DESCRIPTION:🧬 Tip: Queue long research projects and finish after reset.\n⚡ Use science speedups and Tech boosts effectively.\n🧠 Activate research buff heroes or tech events for bonus value.
+LOCATION:Last War Server Time
 CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY;INTERVAL=1
+RRULE:FREQ=WEEKLY
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:7c270cdc-07d0-4bd1-bea7-907f3359386a@example.com
+UID:heroes@example.com
 DTSTAMP;TZID=Asia/Singapore:20250702T055420
 DTSTART;TZID=Asia/Singapore:20250704T080500
 DTEND;TZID=Asia/Singapore:20250705T075500
 SUMMARY:🦸 Train Heroes
-DESCRIPTION:Day 4: Train and promote heroes using shards and XP.
-LOCATION:Last War Server Time (UTC+0)
+DESCRIPTION:📚 Tip: Use stored Hero XP, shards, and promotion items.\n🏅 Promote low-tier heroes for fast points.\n🎟️ Use Recruitment Tickets for extra rewards and synergy.
+LOCATION:Last War Server Time
 CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY;INTERVAL=1
+RRULE:FREQ=WEEKLY
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:6246552a-5677-4c43-a59d-fef331624505@example.com
+UID:troops@example.com
 DTSTAMP;TZID=Asia/Singapore:20250702T055420
 DTSTART;TZID=Asia/Singapore:20250705T080500
 DTEND;TZID=Asia/Singapore:20250706T075500
-SUMMARY:🚨 Total Mobilization
-DESCRIPTION:Day 5: Train soldiers. Use troop trick to boost points.
-LOCATION:Last War Server Time (UTC+0)
+SUMMARY:🏋️ Total Mobilization
+DESCRIPTION:🎖️ Tip: Start troop batches before reset, finish them after.\n⏱️ Use troop training speedups efficiently.\n💰 Save resources and pre-build queues for max gain.
+LOCATION:Last War Server Time
 CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY;INTERVAL=1
+RRULE:FREQ=WEEKLY
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:692b21ff-53ac-4368-ad27-a6427feaeb72@example.com
+UID:enemybuster@example.com
 DTSTAMP;TZID=Asia/Singapore:20250702T055420
 DTSTART;TZID=Asia/Singapore:20250706T080500
 DTEND;TZID=Asia/Singapore:20250707T075500
 SUMMARY:⚔️ Enemy Buster
-DESCRIPTION:Day 6: Attack enemies. Use troop shields to prevent counterattacks.
-LOCATION:Last War Server Time (UTC+0)
+DESCRIPTION:⚠️ Danger: This is the only day your base can be attacked.\n🛡️ Tip: Always shield, garrison, or relocate after fighting.\n🎯 Best Targets: Monsters, tile campers, rogue bases.\n🔍 Extra: Use march speedups to dodge counters.
+LOCATION:Last War Server Time
 CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY;INTERVAL=1
+RRULE:FREQ=WEEKLY
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -112,4 +118,5 @@ DESCRIPTION:⚠️ Danger: Enemy Buster in 3 min
 TRIGGER:-PT3M
 END:VALARM
 END:VEVENT
+
 END:VCALENDAR
