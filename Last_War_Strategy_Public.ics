@@ -18,14 +18,14 @@ BEGIN:VEVENT
 SUMMARY:🛠️ Formation Tactics
 DTSTART;TZID=Asia/Singapore:20250701T170500
 DTEND;TZID=Asia/Singapore:20250702T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#formation-tactics
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250701T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#formation-tactics
 DESCRIPTION:📌 Strategy Tip\n🧠 Focus on optimizing unit layout and buff stacking.\n🧰 Use your saved formation presets (tap the ➕ button under the unit layout).\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#formation-tactics
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Formation Tactics starts soon!
+DESCRIPTION:Formation Tactics starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
@@ -38,14 +38,14 @@ BEGIN:VEVENT
 SUMMARY:📡 Radar Training
 DTSTART;TZID=Asia/Singapore:20250702T170500
 DTEND;TZID=Asia/Singapore:20250703T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#radar-training
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250702T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#radar-training
-DESCRIPTION:📌 Strategy Tip\n🕵️ Scan targets frequently — higher level intel = more resources.\n⏱️ Reset missions often to avoid overstacking.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#radar-training
+DESCRIPTION:📌 Strategy Tip\n🕵️ Scan targets frequently — higher-level intel = more resources.\n⏱️ Reset missions often to avoid overstacking.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#radar-training
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Radar Training starts soon!
+DESCRIPTION:Radar Training starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
@@ -58,14 +58,14 @@ BEGIN:VEVENT
 SUMMARY:🔬 Mech Development
 DTSTART;TZID=Asia/Singapore:20250702T210500
 DTEND;TZID=Asia/Singapore:20250703T205500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#mech-development
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250702T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#mech-development
 DESCRIPTION:📌 Strategy Tip\n⚙️ Use this time to upgrade or fuse mech parts.\n🧠 Best for burning duplicate mech XP or trying out new setups.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#mech-development
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Mech Development starts soon!
+DESCRIPTION:Mech Development starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
@@ -78,19 +78,19 @@ BEGIN:VEVENT
 SUMMARY:🪖 Enemy Buster
 DTSTART;TZID=Asia/Singapore:20250703T170500
 DTEND;TZID=Asia/Singapore:20250704T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#enemy-buster
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250703T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#enemy-buster
 DESCRIPTION:🚨 Danger Event\n🛡️ Shield up or stay active — players will attack for points!\n🎯 Attack lower-level enemies early, then defend.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#enemy-buster
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Enemy Buster starts soon — activate your shield!
+DESCRIPTION:Enemy Buster starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
 ACTION:DISPLAY
-DESCRIPTION:Enemy Buster starts in 3 minutes!
+DESCRIPTION:Enemy Buster begins in 3 minutes!
 END:VALARM
 END:VEVENT
 
@@ -98,14 +98,14 @@ BEGIN:VEVENT
 SUMMARY:⚔️ Total Mobilization
 DTSTART;TZID=Asia/Singapore:20250704T170500
 DTEND;TZID=Asia/Singapore:20250705T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#total-mobilization
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250704T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#total-mobilization
 DESCRIPTION:📌 Strategy Tip\n🤝 Join rallies with your alliance to maximize your contribution.\n🎖️ Use all your stamina during this event window.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#total-mobilization
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Total Mobilization starts soon!
+DESCRIPTION:Total Mobilization starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
@@ -118,14 +118,14 @@ BEGIN:VEVENT
 SUMMARY:📡 Radar Training
 DTSTART;TZID=Asia/Singapore:20250705T170500
 DTEND;TZID=Asia/Singapore:20250706T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#radar-training
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250705T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#radar-training
-DESCRIPTION:📌 Strategy Tip\n🕵️ Scan targets frequently — higher level intel = more resources.\n⏱️ Reset missions often to avoid overstacking.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#radar-training
+DESCRIPTION:📌 Strategy Tip\n🕵️ Scan targets frequently — higher-level intel = more resources.\n⏱️ Reset missions often to avoid overstacking.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#radar-training
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Radar Training starts soon!
+DESCRIPTION:Radar Training starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
@@ -138,19 +138,19 @@ BEGIN:VEVENT
 SUMMARY:🪖 Enemy Buster
 DTSTART;TZID=Asia/Singapore:20250706T170500
 DTEND;TZID=Asia/Singapore:20250707T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#enemy-buster
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250706T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#enemy-buster
 DESCRIPTION:🚨 Danger Event\n🛡️ Shield up or stay active — players will attack for points!\n🎯 Attack lower-level enemies early, then defend.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#enemy-buster
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Enemy Buster starts soon — activate your shield!
+DESCRIPTION:Enemy Buster starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
 ACTION:DISPLAY
-DESCRIPTION:Enemy Buster starts in 3 minutes!
+DESCRIPTION:Enemy Buster begins in 3 minutes!
 END:VALARM
 END:VEVENT
 
@@ -158,14 +158,14 @@ BEGIN:VEVENT
 SUMMARY:✈️ Air Force Growth
 DTSTART;TZID=Asia/Singapore:20250706T210500
 DTEND;TZID=Asia/Singapore:20250707T205500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#air-force-growth
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250706T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#air-force-growth
 DESCRIPTION:📌 Strategy Tip\n✈️ Focus on upgrading aircraft tech and squad synergy.\n🔋 Stockpile Air Force XP tokens for this event.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#air-force-growth
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Air Force Growth starts soon!
+DESCRIPTION:Air Force Growth starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
@@ -178,14 +178,14 @@ BEGIN:VEVENT
 SUMMARY:⚔️ Total Mobilization
 DTSTART;TZID=Asia/Singapore:20250707T170500
 DTEND;TZID=Asia/Singapore:20250708T165500
+LOCATION:https://www.lastwartutorial.com/duel-vs/#total-mobilization
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250707T000000Z
-LOCATION:https://www.lastwartutorial.com/duel-vs/#total-mobilization
 DESCRIPTION:📌 Strategy Tip\n🤝 Join rallies with your alliance to maximize your contribution.\n🎖️ Use all your stamina during this event window.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#total-mobilization
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Total Mobilization starts soon!
+DESCRIPTION:Total Mobilization starts in 15 minutes!
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT3M
