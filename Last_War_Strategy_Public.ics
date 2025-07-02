@@ -3,20 +3,21 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:-//Last War Strategy Calendar//
 BEGIN:VTIMEZONE
-TZID:Asia/Shanghai
-X-LIC-LOCATION:Asia/Shanghai
+TZID:Asia/Singapore
+X-LIC-LOCATION:Asia/Singapore
 BEGIN:STANDARD
 TZOFFSETFROM:+0800
 TZOFFSETTO:+0800
-TZNAME:SST
+TZNAME:SGT
 DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
+
 BEGIN:VEVENT
-UID:lastwar-radar-training-0805@lastwar
+UID:lastwar-radar-training@lastwar
 SUMMARY:📡 Radar Training
-DTSTART;TZID=Asia/Shanghai:20250701T080500
-DTEND;TZID=Asia/Shanghai:20250701T085500
+DTSTART;TZID=Asia/Singapore:20250702T080500
+DTEND;TZID=Asia/Singapore:20250702T085500
 RRULE:FREQ=WEEKLY;BYDAY=TU,FR
 DESCRIPTION:📡 Radar Training starts now.\n\n📝 Next Event Prep:\n🧠 Finish daily missions and refresh Energy before 🪖 Enemy Buster tomorrow.
 BEGIN:VALARM
@@ -30,11 +31,12 @@ ACTION:DISPLAY
 DESCRIPTION:🚨 3min - Radar Training about to begin!
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:lastwar-enemy-buster-0805@lastwar
+UID:lastwar-enemy-buster@lastwar
 SUMMARY:🪖 Enemy Buster
-DTSTART;TZID=Asia/Shanghai:20250701T080500
-DTEND;TZID=Asia/Shanghai:20250701T085500
+DTSTART;TZID=Asia/Singapore:20250703T080500
+DTEND;TZID=Asia/Singapore:20250703T085500
 RRULE:FREQ=WEEKLY;BYDAY=WE,SA
 DESCRIPTION:🪖 Enemy Buster starts now.\n\n📝 Next Event Prep:\n🛡️ Upgrade traps and reinforce base before ⚔️ Total Mobilization.
 BEGIN:VALARM
@@ -48,11 +50,12 @@ ACTION:DISPLAY
 DESCRIPTION:🚨 3min - Enemy Buster about to begin!
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:lastwar-total-mobilization-0805@lastwar
+UID:lastwar-total-mobilization@lastwar
 SUMMARY:⚔️ Total Mobilization
-DTSTART;TZID=Asia/Shanghai:20250701T080500
-DTEND;TZID=Asia/Shanghai:20250701T085500
+DTSTART;TZID=Asia/Singapore:20250704T080500
+DTEND;TZID=Asia/Singapore:20250704T085500
 RRULE:FREQ=WEEKLY;BYDAY=TH,SU
 DESCRIPTION:⚔️ Total Mobilization starts now.\n\n📝 Next Event Prep:\n📦 Clear bag space and complete Arena fights before 🛠️ Formation Tactics.
 BEGIN:VALARM
@@ -66,11 +69,12 @@ ACTION:DISPLAY
 DESCRIPTION:🚨 3min - Total Mobilization about to begin!
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:lastwar-formation-tactics-0805@lastwar
+UID:lastwar-formation-tactics@lastwar
 SUMMARY:🛠️ Formation Tactics
-DTSTART;TZID=Asia/Shanghai:20250701T080500
-DTEND;TZID=Asia/Shanghai:20250701T085500
+DTSTART;TZID=Asia/Singapore:20250701T080500
+DTEND;TZID=Asia/Singapore:20250701T085500
 RRULE:FREQ=WEEKLY;BYDAY=MO
 DESCRIPTION:🛠️ Formation Tactics starts now.\n\n📝 Next Event Prep:\n📊 Save squad presets and max bonuses before 🔬 Mech Development.
 BEGIN:VALARM
@@ -84,11 +88,12 @@ ACTION:DISPLAY
 DESCRIPTION:🚨 3min - Formation Tactics about to begin!
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:lastwar-mech-development-2005@lastwar
+UID:lastwar-mech-development@lastwar
 SUMMARY:🔬 Mech Development
-DTSTART;TZID=Asia/Shanghai:20250701T200500
-DTEND;TZID=Asia/Shanghai:20250701T205500
+DTSTART;TZID=Asia/Singapore:20250702T200500
+DTEND;TZID=Asia/Singapore:20250702T205500
 RRULE:FREQ=WEEKLY;BYDAY=TU
 DESCRIPTION:🔬 Mech Development starts now.\n\n📝 Next Event Prep:\n📈 Use parts and boosts wisely before 📡 Radar Training restarts.
 BEGIN:VALARM
@@ -102,11 +107,12 @@ ACTION:DISPLAY
 DESCRIPTION:🚨 3min - Mech Development about to begin!
 END:VALARM
 END:VEVENT
+
 BEGIN:VEVENT
-UID:lastwar-air-force-growth-2005@lastwar
+UID:lastwar-air-force-growth@lastwar
 SUMMARY:✈️ Air Force Growth
-DTSTART;TZID=Asia/Shanghai:20250701T200500
-DTEND;TZID=Asia/Shanghai:20250701T205500
+DTSTART;TZID=Asia/Singapore:20250706T200500
+DTEND;TZID=Asia/Singapore:20250706T205500
 RRULE:FREQ=WEEKLY;BYDAY=SA
 DESCRIPTION:✈️ Air Force Growth starts now.\n\n📝 Next Event Prep:\n🎯 Level units and gather resources before next 📡 Radar Training.
 BEGIN:VALARM
@@ -120,4 +126,5 @@ ACTION:DISPLAY
 DESCRIPTION:🚨 3min - Air Force Growth about to begin!
 END:VALARM
 END:VEVENT
+
 END:VCALENDAR
