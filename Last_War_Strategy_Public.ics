@@ -18,10 +18,9 @@ BEGIN:VEVENT
 SUMMARY:🛠️ Formation Tactics
 DTSTART;TZID=America/Noronha:20250701T000500
 DTEND;TZID=America/Noronha:20250701T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#formation-tactics
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250701T000000Z
-DESCRIPTION:📌 Strategy Tip\n🧠 Focus on optimizing unit layout and buff stacking.\n🧰 Use your saved formation presets (tap the ➕ button under the unit layout).\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#formation-tactics
+DESCRIPTION:🔸 Today’s Focus\n🧠 Fine-tune and save squad presets (PvP, defense, rallies)\n🧩 Test different hero orders and troop layouts\n🎽 Match gear to your top squad types\n\n🔒 Save for Tomorrow\n🧪 Mech XP upgrades or part fusions (wait for Mech Development)\n🔬 Avoid mech part reshuffling\n\n🚫 Hold Until Later\n✈️ Air XP tokens (Sunday: Air Force Growth)\n🎖️ Hero EXP or promotions (Hero Growth)\n🏗️ Building and 🔬 research speedups (Friday: Total Mobilization)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -38,10 +37,9 @@ BEGIN:VEVENT
 SUMMARY:📡 Radar Training
 DTSTART;TZID=America/Noronha:20250702T000500
 DTEND;TZID=America/Noronha:20250702T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#radar-training
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250702T000000Z
-DESCRIPTION:📌 Strategy Tip\n🕵️ Scan targets frequently — higher-level intel = more resources.\n⏱️ Reset missions often to avoid overstacking.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#radar-training
+DESCRIPTION:🔸 Today’s Focus\n🛰️ Tap Scan at least once for easy points\n♻️ Refresh weak targets\n🧭 Queue gather marches if you’ll be offline\n\n🔒 Save for Tonight\n🧪 Don’t fuse or upgrade mech parts yet\n🛡️ Don’t use shields unless you're expecting an attack\n\n🚫 Hold Until Later\n✈️ Air XP tokens (Sunday)\n🎖️ Hero EXP or promotion items (Hero Growth)\n🏗️ Building and 🔬 research speedups (Friday)\n⚡ Stamina items (Friday and Monday: Mobilization)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -58,10 +56,9 @@ BEGIN:VEVENT
 SUMMARY:🔬 Mech Development
 DTSTART;TZID=America/Noronha:20250702T000500
 DTEND;TZID=America/Noronha:20250702T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#mech-development
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250702T000000Z
-DESCRIPTION:📌 Strategy Tip\n⚙️ Use this time to upgrade or fuse mech parts.\n🧠 Best for burning duplicate mech XP or trying out new setups.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#mech-development
+DESCRIPTION:🔸 Today’s Focus\n🧪 Fuse duplicate mech parts for easy points\n⚙️ Assign parts to unused mechs\n🔋 Spend mech XP to strengthen squads\n\n🔒 Save for Tomorrow\n🪖 Don’t launch PvP attacks or set war rallies (Enemy Buster starts tomorrow)\n🛡️ Don’t shield too early unless you’re already being hit\n\n🚫 Hold Until Later\n✈️ Air XP tokens (Sunday)\n🎖️ Hero EXP or promotion items (Hero Growth)\n🏗️ Building and 🔬 research speedups (Friday)\n⚡ Stamina items (Friday and Monday: Mobilization)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -78,10 +75,9 @@ BEGIN:VEVENT
 SUMMARY:🪖 Enemy Buster
 DTSTART;TZID=America/Noronha:20250703T000500
 DTEND;TZID=America/Noronha:20250703T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#enemy-buster
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250703T000000Z
-DESCRIPTION:🚨 Danger Event\n🛡️ Shield up or stay active — players will attack for points!\n🎯 Attack lower-level enemies early, then defend.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#enemy-buster
+DESCRIPTION:🔸 Today’s Focus\n🎯 Join alliance rallies — even weak contributions help\n🛡️ Use a peace shield if offline or exposed\n🏃 Shelter or garrison troops to avoid hits\n\n🔒 Save for Tomorrow\n⚡ Don’t use stamina items — Total Mobilization is tomorrow\n🎽 Skip monster hunting unless tied to a mission\n\n🚫 Hold Until Later\n✈️ Air XP tokens (Sunday)\n🎖️ Hero EXP or promotions (Hero Growth)\n🏗️ Building and 🔬 research speedups (Friday)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -98,10 +94,9 @@ BEGIN:VEVENT
 SUMMARY:⚔️ Total Mobilization
 DTSTART;TZID=America/Noronha:20250704T000500
 DTEND;TZID=America/Noronha:20250704T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#total-mobilization
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250704T000000Z
-DESCRIPTION:📌 Strategy Tip\n🤝 Join rallies with your alliance to maximize your contribution.\n🎖️ Use all your stamina during this event window.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#total-mobilization
+DESCRIPTION:🔸 Today’s Focus\n⚡ Spend stamina to hit monsters and join rallies\n🏗️ Queue builds or research for passive points\n🧃 Use stamina boosts early to let regen catch up\n\n🔒 Save for Tomorrow\n✈️ Don’t spend Air Force XP tokens — wait for Sunday\n🎖️ Don’t level or promote heroes unless it overlaps with Hero Growth\n\n🚫 Hold Until Later\n✈️ Air XP tokens (Sunday)\n🎖️ Hero EXP or promotion items (Hero Growth)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -118,10 +113,9 @@ BEGIN:VEVENT
 SUMMARY:📡 Radar Training
 DTSTART;TZID=America/Noronha:20250705T000500
 DTEND;TZID=America/Noronha:20250705T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#radar-training
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250705T000000Z
-DESCRIPTION:📌 Strategy Tip\n🕵️ Scan targets frequently — higher-level intel = more resources.\n⏱️ Reset missions often to avoid overstacking.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#radar-training
+DESCRIPTION:🔸 Today’s Focus\n🛰️ Tap Scan once for quick points\n♻️ Refresh poor targets\n🧭 Use low-effort gathering if AFK\n\n🔒 Save for Tonight\n🛡️ Shield or shelter if you’re exposed\n⚔️ Prepare for another Enemy Buster\n\n🚫 Hold Until Later\n✈️ Air XP tokens (Sunday)\n🎖️ Hero EXP or promotions (Hero Growth)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -138,10 +132,9 @@ BEGIN:VEVENT
 SUMMARY:🪖 Enemy Buster
 DTSTART;TZID=America/Noronha:20250706T000500
 DTEND;TZID=America/Noronha:20250706T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#enemy-buster
 RRULE:FREQ=WEEKLY
 DTSTAMP:20250706T000000Z
-DESCRIPTION:🚨 Danger Event\n🛡️ Shield up or stay active — players will attack for points!\n🎯 Attack lower-level enemies early, then defend.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#enemy-buster
+DESCRIPTION:🔸 Today’s Focus\n🎯 Rally with alliance or garrison to avoid exposure\n🛡️ Use a short shield if logging off\n🏃 Shelter troops to prevent resource loss\n\n🔒 Save for Tomorrow\n✈️ Don’t upgrade aircraft yet — Sunday is Air Force Growth\n⚡ Don’t burn stamina if Monday has another Mobilization\n\n🚫 Hold Until Later\n✈️ Air XP tokens (tomorrow)\n🎖️ Hero EXP or promotions (Hero Growth)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -156,12 +149,11 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:✈️ Air Force Growth
-DTSTART;TZID=America/Noronha:20250706T000500
-DTEND;TZID=America/Noronha:20250706T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#air-force-growth
+DTSTART;TZID=America/Noronha:20250707T000500
+DTEND;TZID=America/Noronha:20250707T235500
 RRULE:FREQ=WEEKLY
-DTSTAMP:20250706T000000Z
-DESCRIPTION:📌 Strategy Tip\n✈️ Focus on upgrading aircraft tech and squad synergy.\n🔋 Stockpile Air Force XP tokens for this event.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#air-force-growth
+DTSTAMP:20250707T000000Z
+DESCRIPTION:🔸 Today’s Focus\n✈️ Spend Air XP tokens for upgrades\n📊 Level your best aircraft only — avoid spreading XP thin\n🧠 Optimize synergy between aircraft and formation\n\n🔒 Save for Tomorrow\n⚡ Don’t burn all stamina if Monday repeats Mobilization\n🎖️ Skip hero fusions unless Hero Growth is active\n\n🚫 Hold Until Later\n🎖️ Hero EXP or promotions (Hero Growth)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -176,12 +168,11 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:⚔️ Total Mobilization
-DTSTART;TZID=America/Noronha:20250707T000500
-DTEND;TZID=America/Noronha:20250707T235500
-LOCATION:https://www.lastwartutorial.com/duel-vs/#total-mobilization
+DTSTART;TZID=America/Noronha:20250708T000500
+DTEND;TZID=America/Noronha:20250708T235500
 RRULE:FREQ=WEEKLY
-DTSTAMP:20250707T000000Z
-DESCRIPTION:📌 Strategy Tip\n🤝 Join rallies with your alliance to maximize your contribution.\n🎖️ Use all your stamina during this event window.\n🔗 Learn more: https://www.lastwartutorial.com/duel-vs/#total-mobilization
+DTSTAMP:20250708T000000Z
+DESCRIPTION:🔸 Today’s Focus\n⚡ Final stamina dump before reset\n🏹 Join monster rallies and alliance events\n⏱️ Use short speedups if needed\n\n🔒 Save for Tomorrow\n🛠️ Don’t spend formation tools — wait for Tuesday\n🧪 Don’t fuse mech parts — wait for Wednesday\n\n🚫 Hold Until Later\n🎖️ Hero EXP or promotions (Hero Growth)
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
