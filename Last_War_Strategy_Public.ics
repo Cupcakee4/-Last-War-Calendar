@@ -1,121 +1,123 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Last War Strategy//EN
 CALSCALE:GREGORIAN
+PRODID:-//Last War Strategy Calendar//
 BEGIN:VTIMEZONE
-TZID:Asia/Singapore
+TZID:Asia/Shanghai
+X-LIC-LOCATION:Asia/Shanghai
 BEGIN:STANDARD
 TZOFFSETFROM:+0800
 TZOFFSETTO:+0800
-TZNAME:SGT
+TZNAME:CST
 DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
-
 BEGIN:VEVENT
-UID:radar@example.com
-DTSTAMP;TZID=Asia/Singapore:20250702T055420
-DTSTART;TZID=Asia/Singapore:20250701T080500
-DTEND;TZID=Asia/Singapore:20250702T075500
+UID:lastwar-radar-training-0805@lastwar
 SUMMARY:📡 Radar Training
-DESCRIPTION:🧭 Tip: Stack radar missions before reset, then complete them right after.\n💎 Refresh radar with gems to maximize rewards.\n🎯 Target high-XP and hero-item radar missions for best return.
-LOCATION:Last War Server Time
-CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY
+DTSTART;TZID=Asia/Shanghai:20250701T080500
+DTEND;TZID=Asia/Shanghai:20250701T085500
+RRULE:FREQ=WEEKLY;BYDAY=TU,FR
+DESCRIPTION:📡 Radar Training starts now.\n\n📝 Next Event Prep:\n🧠 Finish daily missions and refresh Energy before 🪖 Enemy Buster tomorrow.
 BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Reminder
 TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:build@example.com
-DTSTAMP;TZID=Asia/Singapore:20250702T055420
-DTSTART;TZID=Asia/Singapore:20250702T080500
-DTEND;TZID=Asia/Singapore:20250703T075500
-SUMMARY:🏗️ Base Expansion
-DESCRIPTION:🏘️ Tip: Upgrade low-cost, short-timer buildings.\n📅 Queue builds before reset and finish them afterward.\n🚚 Use Trade Truck and Stamina missions to align with parallel events.
-LOCATION:Last War Server Time
-CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY
-BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Reminder
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:science@example.com
-DTSTAMP;TZID=Asia/Singapore:20250702T055420
-DTSTART;TZID=Asia/Singapore:20250703T080500
-DTEND;TZID=Asia/Singapore:20250704T075500
-SUMMARY:🧪 Age of Science
-DESCRIPTION:🧬 Tip: Queue long research projects and finish after reset.\n⚡ Use science speedups and Tech boosts effectively.\n🧠 Activate research buff heroes or tech events for bonus value.
-LOCATION:Last War Server Time
-CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:heroes@example.com
-DTSTAMP;TZID=Asia/Singapore:20250702T055420
-DTSTART;TZID=Asia/Singapore:20250704T080500
-DTEND;TZID=Asia/Singapore:20250705T075500
-SUMMARY:🦸 Train Heroes
-DESCRIPTION:📚 Tip: Use stored Hero XP, shards, and promotion items.\n🏅 Promote low-tier heroes for fast points.\n🎟️ Use Recruitment Tickets for extra rewards and synergy.
-LOCATION:Last War Server Time
-CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:troops@example.com
-DTSTAMP;TZID=Asia/Singapore:20250702T055420
-DTSTART;TZID=Asia/Singapore:20250705T080500
-DTEND;TZID=Asia/Singapore:20250706T075500
-SUMMARY:🏋️ Total Mobilization
-DESCRIPTION:🎖️ Tip: Start troop batches before reset, finish them after.\n⏱️ Use troop training speedups efficiently.\n💰 Save resources and pre-build queues for max gain.
-LOCATION:Last War Server Time
-CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:enemybuster@example.com
-DTSTAMP;TZID=Asia/Singapore:20250702T055420
-DTSTART;TZID=Asia/Singapore:20250706T080500
-DTEND;TZID=Asia/Singapore:20250707T075500
-SUMMARY:⚔️ Enemy Buster
-DESCRIPTION:⚠️ Danger: This is the only day your base can be attacked.\n🛡️ Tip: Always shield, garrison, or relocate after fighting.\n🎯 Best Targets: Monsters, tile campers, rogue bases.\n🔍 Extra: Use march speedups to dodge counters.
-LOCATION:Last War Server Time
-CATEGORIES:Game Event
-RRULE:FREQ=WEEKLY
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-TRIGGER:-PT15M
+DESCRIPTION:⏰ 15min - Radar Training starting soon!
 END:VALARM
 BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚠️ Danger: Enemy Buster in 3 min
 TRIGGER:-PT3M
+ACTION:DISPLAY
+DESCRIPTION:🚨 3min - Radar Training about to begin!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lastwar-enemy-buster-0805@lastwar
+SUMMARY:🪖 Enemy Buster
+DTSTART;TZID=Asia/Shanghai:20250701T080500
+DTEND;TZID=Asia/Shanghai:20250701T085500
+RRULE:FREQ=WEEKLY;BYDAY=WE,SA
+DESCRIPTION:🪖 Enemy Buster starts now.\n\n📝 Next Event Prep:\n🛡️ Upgrade traps and reinforce base before ⚔️ Total Mobilization.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:⏰ 15min - Enemy Buster starting soon!
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3M
+ACTION:DISPLAY
+DESCRIPTION:🚨 3min - Enemy Buster about to begin!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lastwar-total-mobilization-0805@lastwar
+SUMMARY:⚔️ Total Mobilization
+DTSTART;TZID=Asia/Shanghai:20250701T080500
+DTEND;TZID=Asia/Shanghai:20250701T085500
+RRULE:FREQ=WEEKLY;BYDAY=TH,SU
+DESCRIPTION:⚔️ Total Mobilization starts now.\n\n📝 Next Event Prep:\n📦 Clear bag space and complete Arena fights before 🛠️ Formation Tactics.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:⏰ 15min - Total Mobilization starting soon!
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3M
+ACTION:DISPLAY
+DESCRIPTION:🚨 3min - Total Mobilization about to begin!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lastwar-formation-tactics-0805@lastwar
+SUMMARY:🛠️ Formation Tactics
+DTSTART;TZID=Asia/Shanghai:20250701T080500
+DTEND;TZID=Asia/Shanghai:20250701T085500
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DESCRIPTION:🛠️ Formation Tactics starts now.\n\n📝 Next Event Prep:\n📊 Save squad presets and max bonuses before 🔬 Mech Development.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:⏰ 15min - Formation Tactics starting soon!
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3M
+ACTION:DISPLAY
+DESCRIPTION:🚨 3min - Formation Tactics about to begin!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lastwar-mech-development-2005@lastwar
+SUMMARY:🔬 Mech Development
+DTSTART;TZID=Asia/Shanghai:20250701T200500
+DTEND;TZID=Asia/Shanghai:20250701T205500
+RRULE:FREQ=WEEKLY;BYDAY=TU
+DESCRIPTION:🔬 Mech Development starts now.\n\n📝 Next Event Prep:\n📈 Use parts and boosts wisely before 📡 Radar Training restarts.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:⏰ 15min - Mech Development starting soon!
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3M
+ACTION:DISPLAY
+DESCRIPTION:🚨 3min - Mech Development about to begin!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lastwar-air-force-growth-2005@lastwar
+SUMMARY:✈️ Air Force Growth
+DTSTART;TZID=Asia/Shanghai:20250701T200500
+DTEND;TZID=Asia/Shanghai:20250701T205500
+RRULE:FREQ=WEEKLY;BYDAY=SA
+DESCRIPTION:✈️ Air Force Growth starts now.\n\n📝 Next Event Prep:\n🎯 Level units and gather resources before next 📡 Radar Training.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:⏰ 15min - Air Force Growth starting soon!
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3M
+ACTION:DISPLAY
+DESCRIPTION:🚨 3min - Air Force Growth about to begin!
 END:VALARM
 END:VEVENT
 END:VCALENDAR
