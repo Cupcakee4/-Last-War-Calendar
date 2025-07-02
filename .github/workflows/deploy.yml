@@ -1,0 +1,31 @@
+name: Sync ICS to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Last_War_Strategy_Public.ics'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Copy ICS to Pages folder
+        run: |
+          mkdir gh-pages
+          cp Last_War_Strategy_Public.ics gh-pages/
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages
+          publish_branch: gh-pages
+          force_orphan: true
