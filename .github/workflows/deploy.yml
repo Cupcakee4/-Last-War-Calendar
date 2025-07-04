@@ -1,50 +1,43 @@
-# .github/workflows/deploy.yml
-name: Sync ICS to GitHub Pages   # ← keep your original workflow title
+name: Deploy ICS calendars to GitHub Pages
 
 on:
   push:
-    branches: [ main ]           # every commit to main redeploys
-    paths:
-      - '*.ics'                  # redeploy when any ICS changes
-      - '.github/workflows/deploy.yml'
-  workflow_dispatch:             # manual run button
+    branches: [ main ]        # redeploy whenever main is updated
+  workflow_dispatch:          # manual run button
 
 permissions:
-  contents: read                 # checkout
-  pages: write                   # publish
-  id-token: write                # required by Deploy Pages
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: read              # for actions/checkout
+  pages: write                # to publish
+  id-token: write             # required by deploy-pages
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1 Checkout repository
+      # 1 Checkout your repo
       - uses: actions/checkout@v4
 
-      # 2 Collect ALL .ics files
-      - name: Copy calendars
-        run: |
-          mkdir -p public
-          cp *.ics public/
+      # 2 Configure Pages (adds everything Pages needs)
+      - uses: actions/configure-pages@v4
 
-      # 3 Upload artifact (v2 already bundles upload-artifact v4 — no deprecation)
+      # 3 Copy **all** .ics files into a publish folder
+      - name: Copy ICS files
+        run: |
+          mkdir -p ./public
+          cp *.ics ./public/
+
+      # 4 Upload that folder as the Pages artifact (upload-pages-artifact@v2
+      #    already bundles actions/upload-artifact@v4 → no deprecation)
       - uses: actions/upload-pages-artifact@v2
         with:
-          path: public           # folder we just created
+          path: ./public
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-
+    runs-on: ubuntu-latest
     steps:
-      # 4 Publish to GitHub Pages
-      - id: deploy
-        uses: actions/deploy-pages@v2
+      # 5 Deploy to GitHub Pages (v2)
+      - uses: actions/deploy-pages@v2
