@@ -1,43 +1,42 @@
-name: Deploy ICS calendars to GitHub Pages
+name: Sync ICS calendars to GitHub Pages
 
 on:
   push:
-    branches: [ main ]        # redeploy whenever main is updated
-  workflow_dispatch:          # manual run button
+    branches: [ main ]          # redeploy whenever main updates
+    paths:
+      - '*.ics'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
 
 permissions:
-  contents: read              # for actions/checkout
-  pages: write                # to publish
-  id-token: write             # required by deploy-pages
+  contents: read                # checkout
+  pages: write                  # publish
+  id-token: write               # required by deploy-pages
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1 Checkout your repo
+      # 1 — Checkout repository
       - uses: actions/checkout@v4
 
-      # 2 Configure Pages (adds everything Pages needs)
-      - uses: actions/configure-pages@v4
-
-      # 3 Copy **all** .ics files into a publish folder
-      - name: Copy ICS files
+      # 2 — Gather every .ics file into a publish folder
+      - name: Copy calendars
         run: |
-          mkdir -p ./public
-          cp *.ics ./public/
+          mkdir -p public
+          cp *.ics public/
 
-      # 4 Upload that folder as the Pages artifact (upload-pages-artifact@v2
-      #    already bundles actions/upload-artifact@v4 → no deprecation)
-      - uses: actions/upload-pages-artifact@v2
+      # 3 — Upload as artifact with v4 (no deprecation warning)
+      - name: Upload artifact for Pages
+        uses: actions/upload-artifact@v4
         with:
-          path: ./public
+          name: github-pages           # deploy-pages default expects this name
+          path: public                 # folder to publish
+          retention-days: 1            # keep only 1 day (Pages copies it)
 
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-    runs-on: ubuntu-latest
-    steps:
-      # 5 Deploy to GitHub Pages (v2)
-      - uses: actions/deploy-pages@v2
+      # 4 — Deploy that artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
+        with:
+          artifact_name: github-pages  # use the artifact we just uploaded
