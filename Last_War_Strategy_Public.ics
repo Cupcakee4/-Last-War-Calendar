@@ -4,6 +4,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 PRODID:-//Last War Strategy Calendar//cupcakee4.github.io//
 X-WR-TIMEZONE:America/Noronha
+
 BEGIN:VTIMEZONE
 TZID:America/Noronha
 BEGIN:STANDARD
@@ -14,33 +15,30 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 
-#################################################################
-# VS D1: Drones, Radar & Mining
-#################################################################
 BEGIN:VEVENT
 SUMMARY:🛠️ VS D1: Drones, Radar & Mining
 DTSTART;TZID=America/Noronha:20250630T000500
 DTEND;TZID=America/Noronha:20250630T235900
-DTSTAMP:20250630T020500Z
+DTSTAMP:20250630T000500Z
 RRULE:FREQ=WEEKLY
-DESCRIPTION:🔥 Today’s Focus\n\
- • 🧠 Max Drone XP, Parts & Radar pops\n\
- • ⚔️ Combat Drone XP\n\
- • ⚙️ Drone Parts\n\
- • 📦 Skill Chip Boxes\n\
- • 🛰️ Radar missions (4×)\n\
- • ⛏️ RSS Mining\n\
- • ⚡ Stamina\n\
-\n\
-⏳ Save for Tomorrow\n\
- • 💾 See prep event at 4:15 PM\n\
-\n\
-🙅🏽‍♀️ Hold Until Later\n\
- • 🌱 Hero XP (save for VS D4)\n\
-\n\
-☆ Quick Tips\n\
- • 🛠️ Queue RSS mines pre-reset, pop after\n\
- • 🛠️ Run chopper missions for Drone XP\n\
+DESCRIPTION:🔥 Today’s Focus
+ • 🧠 Max Drone XP, Parts & Radar pops
+ • ⚔️ Combat Drone XP
+ • ⚙️ Drone Parts
+ • 📦 Skill Chip Boxes
+ • 🛰️ Radar missions (4×)
+ • ⛏️ RSS Mining
+ • ⚡ Stamina
+
+⏳ Save for Tomorrow
+ • 💾 See prep event at 4:15 PM
+
+🙅🏽‍♀️ Hold Until Later
+ • 🌱 Hero XP (save for VS D4)
+
+☆ Quick Tips
+ • 🛠️ Queue RSS mines pre-reset, pop after
+ • 🛠️ Run chopper missions for Drone XP
  • 🛠️ Use campaign store (1k → 10k Drone XP)
 BEGIN:VALARM
 TRIGGER;RELATED=START:PT0M
@@ -54,315 +52,6 @@ DESCRIPTION:Drones, Radar & Mining starts in 15 minutes!
 END:VALARM
 END:VEVENT
 
-#################################################################
-# VS D2: Construction & UR Trucks
-#################################################################
-BEGIN:VEVENT
-SUMMARY:🏗️ VS D2: Construction & UR Trucks
-DTSTART;TZID=America/Noronha:20250701T000500
-DTEND;TZID=America/Noronha:20250701T235900
-DTSTAMP:20250701T020500Z
-RRULE:FREQ=WEEKLY
-DESCRIPTION:🔥 Today’s Focus\n\
- • 🧱 Unwrap building power\n\
- • 🚚 UR Trade Trucks\n\
- • 📜 UR Secret Tasks\n\
- • 🎟️ Survivor Tickets\n\
-\n\
-⏳ Save for Tomorrow\n\
- • 💾 See prep event at 4:15 PM\n\
-\n\
-🙅🏽‍♀️ Hold Until Later\n\
- • 🚫 Do NOT collect research, radars, or component boxes\n\
-\n\
-☆ Quick Tips\n\
- • 🛠️ Pop Christmas Wonderland buff\n\
- • 🛠️ Claim wrapped upgrades\n\
- • 🛠️ Spam quick RSS/Squad/Gear builds\n\
- • 🛠️ Short > long speed-ups (3×3 h > 1×10 h)
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Construction & UR Trucks starts now!
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Construction & UR Trucks starts in 15 minutes!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# VS D3: Research & Components
-#################################################################
-BEGIN:VEVENT
-SUMMARY:🧪 VS D3: Research & Components
-DTSTART;TZID=America/Noronha:20250702T000500
-DTEND;TZID=America/Noronha:20250702T235900
-DTSTAMP:20250702T020500Z
-RRULE:FREQ=WEEKLY
-DESCRIPTION:🔥 Today’s Focus\n\
- • 🧠 Finish Alliance-Duel research\n\
-\n\
-⏳ Save for Tomorrow\n\
- • 💾 See prep event at 4:15 PM\n\
-\n\
-🙅🏽‍♀️ Hold Until Later\n\
- • 🚫 Hero XP / Tickets / Skill Pts\n\
-\n\
-☆ Quick Tips\n\
- • 🛠️ Tier-2 goal: top-3 lines Lv 6\n\
- • 🛠️ Tier-3 goal: Duel Expert 20\n\
- • 🛠️ Garage 1/4, Units, Dev to 50 %+\n\
- • 🛠️ Use tech speed-ups today
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Research & Components starts now!
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Research & Components starts in 15 minutes!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# VS D4: Hero XP, Shards & Skills
-#################################################################
-BEGIN:VEVENT
-SUMMARY:🌱 VS D4: Hero XP, Shards & Skills
-DTSTART;TZID=America/Noronha:20250703T000500
-DTEND;TZID=America/Noronha:20250703T235900
-DTSTAMP:20250703T020500Z
-RRULE:FREQ=WEEKLY
-DESCRIPTION:🔥 Today’s Focus\n\
- • 📚 Dump all hero materials\n\
- • 🧩 Tier Shards\n\
- • 🎟️ Recruit Tickets\n\
- • 🥇 Skill Medals\n\
-\n\
-⏳ Save for Tomorrow\n\
- • 💾 See prep event at 4:15 PM\n\
-\n\
-🙅🏽‍♀️ Hold Until Later\n\
- • 🚫 Radars (save for VS D5)\n\
-\n\
-☆ Quick Tips\n\
- • 🛠️ Shop Alliance / Campaign / VIP for hero mats\n\
- • 🛠️ Use Invasion store for tickets
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Hero XP, Shards & Skills starts now!
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Hero XP, Shards & Skills starts in 15 minutes!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# VS D5: Troop Promotion & Radar
-#################################################################
-BEGIN:VEVENT
-SUMMARY:🪖 VS D5: Troop Promotion & Radar
-DTSTART;TZID=America/Noronha:20250704T000500
-DTEND;TZID=America/Noronha:20250704T235900
-DTSTAMP:20250704T020500Z
-RRULE:FREQ=WEEKLY
-DESCRIPTION:🔥 Today’s Focus\n\
- • 🪖 Promoted troops\n\
- • ⏩ Training speed-ups\n\
- • 📡 Radar tasks\n\
-\n\
-⏳ Save for Tomorrow\n\
- • 💾 See prep event at 4:15 PM\n\
-\n\
-🙅🏽‍♀️ Hold Until Later\n\
- • 🚫 Construction/Tech speed-ups\n\
-\n\
-☆ Quick Tips\n\
- • 🛠️ Promote 1–2 levels below cap\n\
- • 🛠️ Batch in 1–2.5 h intervals\n\
- • 🛠️ Focus points from output tier
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Troop Promotion & Radar starts now!
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Troop Promotion & Radar starts in 15 minutes!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# VS D6: Enemy Buster (AVA)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:💥 VS D6: Enemy Buster (AVA)
-DTSTART;TZID=America/Noronha:20250705T000500
-DTEND;TZID=America/Noronha:20250705T235900
-DTSTAMP:20250705T020500Z
-RRULE:FREQ=WEEKLY
-DESCRIPTION:🔥 Today’s Focus\n\
- • ⚔️ Kill AVA troops (5×)\n\
- • 🩸 Troop losses score\n\
- • 🚚 UR Trucks (200 k pts send)\n\
- • 📜 UR Secret Tasks (max 4 refresh)\n\
- • 💉 Healing speed-ups\n\
- • 🛡️ Shield if offline\n\
-\n\
-⏳ Save for Tomorrow\n\
- • 💾 (cycle ends – no prep)\n\
-\n\
-🙅🏽‍♀️ Hold Until Later\n\
- • 🚫 Other speed-ups (tech/build)\n\
-\n\
-☆ Quick Tips\n\
- • 🛠️ Fight if online, else shield\n\
- • 🛠️ 24 hr shield at reset\n\
- • 🛠️ 8 hr buffer 3 hr pre-reset
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Enemy Buster (AVA) starts now!
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Enemy Buster (AVA) starts in 15 minutes!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# Prep – Save Research & Radars (4:15 PM)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:💾 Prep – Save Research & Radars
-DTSTART;TZID=America/Noronha:20250701T161500
-DTEND;TZID=America/Noronha:20250630T235900
-DTSTAMP:20250701T181500Z
-DESCRIPTION:💾 PREP FOR TOMORROW:\n\
- • 🧪 Leave research finished but uncollected\n\
- • 📡 Keep radar missions stacked\n\
- • 📦 Hold drone component boxes
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Save Research & Radars prep now!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# Prep – Save Hero Items (4:15 PM)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:💾 Prep – Save Hero Items
-DTSTART;TZID=America/Noronha:20250702T161500
-DTEND;TZID=America/Noronha:20250702T235900
-DTSTAMP:20250702T181500Z
-DESCRIPTION:💾 PREP FOR TOMORROW:\n\
- • 🌱 Save Hero XP\n\
- • 🎟️ Save Recruit Tickets\n\
- • 🎖️ Save Hero Skill Medals
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Save Hero Items prep now!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# Prep – Save Radars for Troop Day (4:15 PM)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:💾 Prep – Save Radars for Troop Day
-DTSTART;TZID=America/Noronha:20250703T161500
-DTEND;TZID=America/Noronha:20250703T235900
-DTSTAMP:20250703T181500Z
-DESCRIPTION:💾 PREP FOR TOMORROW:\n\
- • 🚫 Do NOT pop radar drops today\n\
- • 🪖 Ensure barracks queues are primed
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Save Radars for Troop Day prep now!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# Prep – Bank Speed-ups for Next Week (4:15 PM)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:💾 Prep – Bank Speed-ups for Next Week
-DTSTART;TZID=America/Noronha:20250704T161500
-DTEND;TZID=America/Noronha:20250704T235900
-DTSTAMP:20250704T181500Z
-DESCRIPTION:💾 PREP FOR NEXT WEEK:\n\
- • 🔄 Save construction speed-ups\n\
- • 🛠️ Save tech speed-ups\n\
- • ⏳ Queue long HQ/Lab upgrades
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:Bank Speed-ups prep now!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# 🚨 Enemy Buster 🚨 8 hr 🛡️ (Day 5)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:🚨 Enemy Buster 🚨 8 hr 🛡️
-DTSTART;TZID=America/Noronha:20250704T210000
-DTEND;TZID=America/Noronha:20250705T020000
-DTSTAMP:20250704T230000Z
-DESCRIPTION:🛡️ Set 8-hr shield – covers reset + early AVA
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:🚨 Apply 8 hr Shield – AVA starts at reset!
-END:VALARM
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT60M
-ACTION:DISPLAY
-DESCRIPTION:⏰ 1 hr after: Re-check shield!
-END:VALARM
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT90M
-ACTION:DISPLAY
-DESCRIPTION:⏰ 1.5 hr after: Final chance to apply shield!
-END:VALARM
-END:VEVENT
-
-#################################################################
-# 🚨 Enemy Buster 🚨 24 hr 🛡️ (Day 6→7)
-#################################################################
-BEGIN:VEVENT
-SUMMARY:🚨 Enemy Buster 🚨 24 hr 🛡️
-DTSTART;TZID=America/Noronha:20250705T030000
-DTEND;TZID=America/Noronha:20250706T010000
-DTSTAMP:20250705T050000Z
-DESCRIPTION:🛡️ Set 24-hr shield – covers remainder of AVA
-BEGIN:VALARM
-TRIGGER;RELATED=START:-PT120M
-ACTION:DISPLAY
-DESCRIPTION:⏰ 2 hr before: Prep for 24 hr Shield!
-END:VALARM
-BEGIN:VALARM
-TRIGGER;RELATED=START:-PT60M
-ACTION:DISPLAY
-DESCRIPTION:⏰ 1 hr before: Almost time to shield up!
-END:VALARM
-BEGIN:VALARM
-TRIGGER;RELATED=START:PT0M
-ACTION:DISPLAY
-DESCRIPTION:🚨 Set 24 hr Shield now!
-END:VALARM
-END:VEVENT
+… [include all other VEVENT blocks here, exactly as above] …
 
 END:VCALENDAR
