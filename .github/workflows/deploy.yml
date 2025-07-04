@@ -2,32 +2,32 @@ name: pages-build-deployment
 
 on:
   push:
-    branches: [ main ]   # re-deploy every time you commit to main
-  workflow_dispatch:     # allow manual re-run
+    branches: [ main ]        # redeploy whenever you push to main
+  workflow_dispatch:          # allow manual rerun
 
 permissions:
-  contents: read         # checkout
-  pages: write           # publish
-  id-token: write        # required by Deploy Pages
+  contents: read              # checkout
+  pages: write                # publish
+  id-token: write             # required by Deploy Pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Check out your repo
-      - uses: actions/checkout@v3
+      # 1 — Check out your repository
+      - uses: actions/checkout@v4
 
-      # 2. Copy every .ics into a publish folder
+      # 2 — Copy every .ics into a publish folder
       - name: Prepare calendar files
         run: |
           mkdir -p public
           cp *.ics public/
 
-      # 3. Upload that folder as a Pages artifact
-      - uses: actions/upload-pages-artifact@v1
+      # 3 — Upload that folder as the Pages artifact (v2)
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: public
 
-      # 4. Deploy to GitHub Pages
-      - uses: actions/deploy-pages@v1
+      # 4 — Deploy to GitHub Pages (v2)
+      - uses: actions/deploy-pages@v2
