@@ -1,31 +1,33 @@
-name: Sync ICS to GitHub Pages
+name: pages-build-deployment
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - 'Last_War_Strategy_Public.ics'
+    branches: [ main ]   # re-deploy every time you commit to main
+  workflow_dispatch:     # allow manual re-run
+
+permissions:
+  contents: read         # checkout
+  pages: write           # publish
+  id-token: write        # required by Deploy Pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main branch
-        uses: actions/checkout@v4
-        with:
-          ref: main
+      # 1. Check out your repo
+      - uses: actions/checkout@v3
 
-      - name: Copy ICS to Pages folder
+      # 2. Copy every .ics into a publish folder
+      - name: Prepare calendar files
         run: |
-          mkdir gh-pages
-          cp Last_War_Strategy_Public.ics gh-pages/
+          mkdir -p public
+          cp *.ics public/
 
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
+      # 3. Upload that folder as a Pages artifact
+      - uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./gh-pages
-          publish_branch: gh-pages
-          force_orphan: true
+          path: public
+
+      # 4. Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v1
