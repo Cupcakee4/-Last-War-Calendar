@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-PRODID:-//Last War Strategy Calendar//cupcakee4.github.io//
+PRODID:-//Last War Strategy Calendar (Kaomoji)//cupcakee4.github.io//
 X-WR-TIMEZONE:America/Noronha
 
 BEGIN:VTIMEZONE
@@ -132,8 +132,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:💾 Prep – Save Research & Radars
 DTSTART;TZID=America/Noronha:20250701T161500
-DTEND;TZID=America/Noronha:20250630T235900
-DTSTAMP:20250630T161500Z
+DTEND;TZID=America/Noronha:20250701T235900
+DTSTAMP:20250701T161500Z
 DESCRIPTION:💾 PREP FOR TOMORROW:\n • 🧪 Leave research finished but uncollected\n • 📡 Keep radar missions stacked\n • 📦 Hold drone component boxes
 BEGIN:VALARM
 TRIGGER;RELATED=START:PT0M
