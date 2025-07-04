@@ -9,35 +9,32 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read      # checkout
-  pages: write        # publish
-  id-token: write     # required by deploy-pages
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1 — Check out repo
+      # 1  Check out repo
       - uses: actions/checkout@v4
 
-      # 2 — Configure GitHub Pages (sets run-ID, etc.)
+      # 2  Configure GitHub Pages (required)
       - uses: actions/configure-pages@v4
 
-      # 3 — Collect every .ics file
+      # 3  Collect every .ics file
       - name: Copy calendars
         run: |
           mkdir -p public
           cp *.ics public/
 
-      # 4 — Upload artifact using upload-artifact v4 (no deprecation)
-      - uses: actions/upload-artifact@v4
+      # 4  Upload artifact with **upload-pages-artifact@v2**
+      #    (internally uses upload-artifact v4 – no deprecation)
+      - uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
-          path: public
-          retention-days: 1
+          path: public          # keep default artifact name "github-pages"
 
-      # 5 — Deploy artifact to GitHub Pages
+      # 5  Deploy to GitHub Pages (no artifact_name parameter)
       - uses: actions/deploy-pages@v2
-        with:
-          artifact_name: github-pages
