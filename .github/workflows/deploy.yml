@@ -1,50 +1,41 @@
-name: Deploy ICS calendars to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-    paths:
-      - "*.ics"
-      - ".github/workflows/deploy.yml"
-  workflow_dispatch:
+    branches: [main]
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 📥 Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: ⚙️ Configure GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: 📂 Prepare public folder
-        run: |
-          mkdir public
-          cp *.ics public/
-
-      - name: ☁️ Upload to GitHub Pages artifact store
-        uses: actions/upload-artifact@v4
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
-          path: public
+          path: .  # adjust if your .ics is in a subfolder
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: 🚀 Deploy to GitHub Pages
-        id: deploy
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          artifact_name: github-pages
