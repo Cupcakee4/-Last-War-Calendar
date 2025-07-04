@@ -1,33 +1,50 @@
-name: pages-build-deployment
+# .github/workflows/deploy.yml
+name: Sync ICS to GitHub Pages   # ← keep your original workflow title
 
 on:
   push:
-    branches: [ main ]        # redeploy whenever you push to main
-  workflow_dispatch:          # allow manual rerun
+    branches: [ main ]           # every commit to main redeploys
+    paths:
+      - '*.ics'                  # redeploy when any ICS changes
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:             # manual run button
 
 permissions:
-  contents: read              # checkout
-  pages: write                # publish
-  id-token: write             # required by Deploy Pages
+  contents: read                 # checkout
+  pages: write                   # publish
+  id-token: write                # required by Deploy Pages
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1 — Check out your repository
+      # 1 Checkout repository
       - uses: actions/checkout@v4
 
-      # 2 — Copy every .ics into a publish folder
-      - name: Prepare calendar files
+      # 2 Collect ALL .ics files
+      - name: Copy calendars
         run: |
           mkdir -p public
           cp *.ics public/
 
-      # 3 — Upload that folder as the Pages artifact (v2)
+      # 3 Upload artifact (v2 already bundles upload-artifact v4 — no deprecation)
       - uses: actions/upload-pages-artifact@v2
         with:
-          path: public
+          path: public           # folder we just created
 
-      # 4 — Deploy to GitHub Pages (v2)
-      - uses: actions/deploy-pages@v2
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      # 4 Publish to GitHub Pages
+      - id: deploy
+        uses: actions/deploy-pages@v2
