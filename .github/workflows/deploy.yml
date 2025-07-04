@@ -1,11 +1,11 @@
-name: Deploy ICS calendars to GitHub Pages
+name: Publish ICS calendars to GitHub Pages
 
 on:
   push:
     branches: [ main ]
     paths:
-      - '*.ics'
-      - '.github/workflows/deploy.yml'
+      - "*.ics"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
@@ -13,28 +13,41 @@ permissions:
   pages: write
   id-token: write
 
+############################
+# Job 1: build → creates artifact
+############################
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      # 1  Check out repo
       - uses: actions/checkout@v4
 
-      # 2  Configure GitHub Pages (required)
+      # Configure Pages (sets run-ID)
       - uses: actions/configure-pages@v4
 
-      # 3  Collect every .ics file
-      - name: Copy calendars
+      # Copy every .ics to ./public
+      - name: Gather calendars
         run: |
           mkdir -p public
           cp *.ics public/
 
-      # 4  Upload artifact with **upload-pages-artifact@v2**
-      #    (internally uses upload-artifact v4 – no deprecation)
-      - uses: actions/upload-pages-artifact@v2
+      # Upload artifact with **upload-artifact v4** (safe)
+      - uses: actions/upload-artifact@v4
         with:
-          path: public          # keep default artifact name "github-pages"
+          name: github-pages          # MUST stay exactly this
+          path: public
+          retention-days: 1
 
-      # 5  Deploy to GitHub Pages (no artifact_name parameter)
-      - uses: actions/deploy-pages@v2
+############################
+# Job 2: deploy → publishes artifact
+############################
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v2         # publishes “github-pages” artifact
