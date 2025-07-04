@@ -81,4 +81,198 @@ ACTION:DISPLAY
 DESCRIPTION:Radar Training starts in 15 minutes!
 END:VALARM
 END:VEVENT
+#################################################################
+# 3 — Mech Development  (Wed Night)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:🔬 Mech Development
+DTSTART;TZID=America/Noronha:20250702T000500
+DTEND;TZID=America/Noronha:20250702T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250702T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+⚙️ Fuse / upgrade mech parts 🔝\n\
+🧪 Test new mech builds\n\
+⚙️ Equip unused parts 🔝\n\
+\n\
+⏳ Save for Tomorrow\n\
+🪖 Troop production boosts 💾\n\
+🔋 Stamina items 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+🛫 Air-XP tokens 💾\n\
+🌱 Hero-XP 💾\n\
+🚫 Large speed-ups 💾\n\
+\n\
+🧠 Quick Tips\n\
+👛 Check store for cheap gear parts\n\
+🔄 Keep one mech slot free for testing
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Mech Development starts in 15 minutes!
+END:VALARM
+END:VEVENT
+#################################################################
+# 4 — Enemy Buster  (Thu)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:🪖 Enemy Buster
+DTSTART;TZID=America/Noronha:20250703T000500
+DTEND;TZID=America/Noronha:20250703T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250703T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+🛡️ Shield if offline; defend base\n\
+🎯 Hit lower-tier enemies early\n\
+🤝 Join defense & attack rallies\n\
+\n\
+⏳ Save for Tomorrow\n\
+🔋 Stamina packs 💾\n\
+🛬🎁 Chip boxes 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+🛫 Air-XP tokens 💾\n\
+🌱 Hero-XP 💾\n\
+\n\
+🧠 Quick Tips\n\
+💥 Score early, shield late\n\
+⚡ Keep stamina above 0 for points
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Enemy Buster starts in 15 minutes!
+END:VALARM
+END:VEVENT
+#################################################################
+# 5 — Total Mobilization  (Fri)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:⚔️ Total Mobilization
+DTSTART;TZID=America/Noronha:20250704T000500
+DTEND;TZID=America/Noronha:20250704T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250704T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+🔋 Spend stamina on monsters 💸\n\
+🤝 Join every rally for max score\n\
+🎖️ Use contribution boosts 👛\n\
+\n\
+⏳ Save for Tomorrow\n\
+📡 Radar tasks 💾\n\
+🛫 Air-XP tokens 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+⚙️ Mech fusion 💾\n\
+\n\
+🧠 Quick Tips\n\
+🔄 Stamina regen—spend early & often\n\
+🧠 Queue long builds/research for passive points
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Total Mobilization starts in 15 minutes!
+END:VALARM
+END:VEVENT
+#################################################################
+# 6 — Radar Training (Repeat)  (Sat Day)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:📡 Radar Training
+DTSTART;TZID=America/Noronha:20250705T000500
+DTEND;TZID=America/Noronha:20250705T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250705T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+📡 Finish stacked radar tasks\n\
+📦 Quick RSS pops for easy score\n\
+🔋 Light stamina use on rebels 💸\n\
+\n\
+⏳ Save for Tonight\n\
+🛡️ Short shield packs 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+🛫 Air-XP tokens 💾\n\
+🌱 Hero-XP 💾
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Radar Training starts in 15 minutes!
+END:VALARM
+END:VEVENT
+#################################################################
+# 7 — Enemy Buster (Repeat)  (Sat Night)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:🪖 Enemy Buster
+DTSTART;TZID=America/Noronha:20250706T000500
+DTEND;TZID=America/Noronha:20250706T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250706T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+🛡️ Defensive setup & shield if offline\n\
+🎯 Snipe easy bases for rank points\n\
+🤝 Rally with alliance for defense\n\
+\n\
+⏳ Save for Tomorrow\n\
+🛫 Air-XP tokens 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+⚙️ Mech fusion 💾
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Enemy Buster starts in 15 minutes!
+END:VALARM
+END:VEVENT
+#################################################################
+# 8 — Air Force Growth  (Sun)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:✈️ Air Force Growth
+DTSTART;TZID=America/Noronha:20250707T000500
+DTEND;TZID=America/Noronha:20250707T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250707T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+🛫 Spend Air-XP tokens 🔝\n\
+🛫 Upgrade aircraft skills 🔝\n\
+💸 Use aircraft parts as needed\n\
+\n\
+⏳ Save for Tomorrow\n\
+🔋 Stamina packs 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+⚙️ Mech parts 💾
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Air Force Growth starts in 15 minutes!
+END:VALARM
+END:VEVENT
+#################################################################
+# 9 — Total Mobilization (Repeat)  (Mon)
+#################################################################
+BEGIN:VEVENT
+SUMMARY:⚔️ Total Mobilization
+DTSTART;TZID=America/Noronha:20250708T000500
+DTEND;TZID=America/Noronha:20250708T235500
+RRULE:FREQ=WEEKLY
+DTSTAMP;TZID=America/Noronha:20250708T000000
+DESCRIPTION:🔥 Today’s Focus\n\
+🔋 Final stamina dump 💸\n\
+🤝 Join monster rallies for last points\n\
+🎖️ Contribution push 👛\n\
+\n\
+⏳ Save for Tomorrow\n\
+🧠 Formation tweaks 💾\n\
+\n\
+🙅🏽‍♀️ Hold Until Later\n\
+⚙️ Mech fusion 💾
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Total Mobilization starts in 15 minutes!
+END:VALARM
+END:VEVENT
 END:VCALENDAR
