@@ -17,16 +17,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload site artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # adjust if your .ics is in a subfolder
+          path: .  # If your files are in a subfolder, change this
 
   deploy:
     needs: build
